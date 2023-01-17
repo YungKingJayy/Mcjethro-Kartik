@@ -27,3 +27,13 @@ body {
     font-style: italic;
     font-weight: 200;
 }
+
+#survey-form
+{
+display:flex;
+flex-direction:column;
+}
+
+
+
+
