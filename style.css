@@ -32,6 +32,13 @@ body {
 {
 display:flex;
 flex-direction:column;
+background-color: rgba(27, 27, 50, 0.8);
+padding: 2em;
+margin-top: 2em;
+margin-inline: auto;
+max-width: 60%;
+border-radius: 5px;
+gap: .5em;
 }
 
 

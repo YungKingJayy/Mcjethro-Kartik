@@ -14,14 +14,21 @@
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform Name</p>
     <form id="survey-form">
-        <label for="name">Name</label>
-<input type = "text" id="name">
-<label >Name</label>
-<input type = "text" id="name">
-<label for="email">Email ID</label>
-<input type = "email" id="email">
-<label>Name</label>
-<input type = "text" id="name">
-</form>
+        <label for="name" id="name-label">Name</label>
+        <input type = "text" id="name" placeholder="Enter your name" required>
+        <label for="email" id="email-label">Email</label>
+        <input type = "email" id="email" placeholder="Enter your Email" required>
+        <label for="number" id="number-label">Age (optional)</label>
+        <input type = "number" id="number" placeholder="Age" required>
+        <label>Which option best describes your current role?</label>
+        <select name="dropdown" id="dropdown" required>
+            <option disabled selected>Select an option</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+        </select>
+    </form>
 </body>
 </html>
