@@ -21,8 +21,9 @@
         <label for="number" id="number-label">Age (optional)</label>
         <input type = "number" id="number" placeholder="Age" required>
         <label>Which option best describes your current role?</label>
+
         <select name="dropdown" id="dropdown" required>
-            <option disabled selected>Select an option</option>
+            <option disabled selected>Select current role</option>
             <option>Student</option>
             <option>Full Time Job</option>
             <option>Full Time Learner</option>
@@ -30,12 +31,15 @@
             <option>Other</option>
         </select>
         <label>Would you recommend freeCodeCamp to a friend?</label>
-        <input type="radio" name= "optionvalue" value="definitely" id="definitely">
-        <label for="definitely">Definitely</label>
-        <input type="radio" name = "optionvalue" value="maybe" id="maybe">
-        <label for="maybe">Maybe</label>
-        <input type="radio" name="optionvalue" value="not sure" id="notsure">
-        <label for="notsure">Not Sure</label>
+        <div class="radio">
+            <input type="radio" name="optionvalue" value="definitely" id="definitely">
+            <label for="definitely">Definitely</label><br>
+            <input type="radio" name="optionvalue" value="maybe" id="maybe">
+            <label for="maybe">Maybe</label><br>
+            <input type="radio" name="optionvalue" value="not sure" id="notsure">
+            <label for="notsure">Not Sure</label>
+        </div>
+        
         <select name="dropdown" id="dropdown" required>
             <option disabled selected>Select an option</option>
             <option>Challenges</option>
@@ -44,30 +48,34 @@
             <option>Open Source</option>
         </select>
         <label>What would you like to see improved? (Check all that apply)</label>
-<input type="checkbox" id="frontend" value="frontproject">
-<label>Front-end Projects</label> 
-<input type="checkbox" id="backend" value="backproject">
-<label>Back-end Projects</label>
-<input type="checkbox" id="data" value="datavisualization">
-<label>Data Visualization</label>
-<input type="checkbox" id="challenges" value="challenges">
-<label>Challenges</label>
-<input type="checkbox" id="open" value="opensource">
-<label>Open Source Community</label>    
-<input type="checkbox" id="gitter" value="helprooms">
-<label>Gitter help rooms</label>
-<input type="checkbox" id="videos" value="video">
-<label>Videos</label>
-<input type="checkbox" id="city" value="meetups">
-<label>City Meetups</label>
-<input type="checkbox" id="wiki" value="wik">
-<label>Wiki</label>
-<input type="checkbox" id="forum" value="for">
-<label>Forum</label>
-<input type="checkbox" id="course" value="additional">
-<label>Additional Courses</label>
-<label>Any comments or suggestions?</label>
-<input type="textarea" placeholder="Enter your comment here...">
+        
+        <div class="checkbox">
+            <input type="checkbox" id="frontend" value="frontproject">
+            <label>Front-end Projects</label><br>
+            <input type="checkbox" id="backend" value="backproject">
+            <label>Back-end Projects</label><br>
+            <input type="checkbox" id="data" value="datavisualization">
+            <label>Data Visualization</label><br>
+            <input type="checkbox" id="challenges" value="challenges">
+            <label>Challenges</label><br>
+            <input type="checkbox" id="open" value="opensource">
+            <label>Open Source Community</label><br>
+            <input type="checkbox" id="gitter" value="helprooms">
+            <label>Gitter help rooms</label><br>
+            <input type="checkbox" id="videos" value="video">
+            <label>Videos</label><br>
+            <input type="checkbox" id="city" value="meetups">
+            <label>City Meetups</label><br>
+            <input type="checkbox" id="wiki" value="wik">
+            <label>Wiki</label><br>
+            <input type="checkbox" id="forum" value="for">
+            <label>Forum</label><br>
+            <input type="checkbox" id="course" value="additional">
+            <label>Additional Courses</label>
+        </div>
+    <label for="textarea">Any comments or suggestions?</label>
+    <textarea id="textarea" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+    <button id="submit">Submit</button>
 
 
 
